@@ -2,7 +2,6 @@
 using System.Collections;
 //using FoodSystem;
 public class FoodSlot : MonoBehaviour {
-    int a;
     FoodSystem.FoodData myFoodData;
     public FoodSystem.FoodData fooddata
     {
@@ -20,4 +19,12 @@ public class FoodSlot : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void settingData(int data)
+    {
+        string test = "num_lst";
+        Sprite[] sprite = Resources.LoadAll<Sprite>(test.ToString()) as Sprite[];
+        if (null == sprite) print(test);
+        GetComponent<SpriteRenderer>().sprite = sprite[data];
+    }
 }

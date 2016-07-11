@@ -1,0 +1,981 @@
+fileFormatVersion: 2
+guid: 6989495a09514fb409ff954888b5c6f4
+timeCreated: 1468226892
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: num_lst_0
+    21300002: num_lst_1
+    21300004: num_lst_2
+    21300006: num_lst_3
+    21300008: num_lst_4
+    21300010: num_lst_5
+    21300012: num_lst_6
+    21300014: num_lst_7
+    21300016: num_lst_8
+    21300018: num_lst_9
+    21300020: num_lst_10
+    21300022: num_lst_11
+    21300024: num_lst_12
+    21300026: num_lst_13
+    21300028: num_lst_14
+    21300030: num_lst_15
+    21300032: num_lst_16
+    21300034: num_lst_17
+    21300036: num_lst_18
+    21300038: num_lst_19
+    21300040: num_lst_20
+    21300042: num_lst_21
+    21300044: num_lst_22
+    21300046: num_lst_23
+    21300048: num_lst_24
+    21300050: num_lst_25
+    21300052: num_lst_26
+    21300054: num_lst_27
+    21300056: num_lst_28
+    21300058: num_lst_29
+    21300060: num_lst_30
+    21300062: num_lst_31
+    21300064: num_lst_32
+    21300066: num_lst_33
+    21300068: num_lst_34
+    21300070: num_lst_35
+    21300072: num_lst_36
+    21300074: num_lst_37
+    21300076: num_lst_38
+    21300078: num_lst_39
+    21300080: num_lst_40
+    21300082: num_lst_41
+    21300084: num_lst_42
+    21300086: num_lst_43
+    21300088: num_lst_44
+    21300090: num_lst_45
+    21300092: num_lst_46
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: num_lst_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_8
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_9
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 172
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_14
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_15
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_17
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_18
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_19
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 129
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_21
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_25
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_26
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_27
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_28
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_29
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 86
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_31
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_32
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_33
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_34
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_35
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_36
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_37
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_38
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_39
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 43
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_41
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_42
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_43
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_44
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 16.5}
+        - {x: -16.5, y: 13.5}
+        - {x: -16.5, y: -12.5}
+        - {x: -13.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 16.5, y: 15.5}
+        - {x: 13.5, y: 16.5}
+    - name: num_lst_45
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: num_lst_46
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 85
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

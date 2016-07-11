@@ -74,9 +74,14 @@ public class GameSystem : MonoBehaviour {
     int foodtypeNum = 0;
     // Use this for initialization
 
-    LinkedList<FoodSystem.FoodTypes> foodlist;
+    LinkedList<FoodSystem.FoodTypes> foodlist = new LinkedList<FoodSystem.FoodTypes>();
+    Camera camera = null;
+    void Awake()
+    {
+        camera = FindObjectOfType<Camera>();
+    }
 
-	void Start () {
+    void Start () {
         for (int i = 0; i < 10; ++i)
         {                                                       
             resourcesNameHashArray[i] = "number_" + i;
@@ -85,13 +90,34 @@ public class GameSystem : MonoBehaviour {
         foodtypeNum = 9; //(int)FoodSystem.FoodTypes.eFoodTypesNum - 1;
         for (int i = 0; i < 1000; ++i)
         {
-            int val = Random.Range(0, foodtypeNum);
-            foodlist.AddLast((FoodSystem.FoodTypes) val);
+            FoodSystem.FoodTypes val = new FoodSystem.FoodTypes();
+            val = (FoodSystem.FoodTypes) Random.Range(0, foodtypeNum);
+            foodlist.AddLast(val);
         }
+
+        _InitFoodZone();
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        if (Input.GetMouseButtonDown(1))
+        {
+            Vector3 pos = camera.ScreenToWorldPoint(Input.mousePosition);
+        }
+    }
+
+    void _InitFoodZone()
+    {
+        foodzone = GetComponentInChildren<FoodZone>();
+        
+        for (int x = 0; x < foodzone.zoneWidth; ++x)
+        {
+            for (int y = 0; y < foodzone.zoneHeight; ++y)
+            {
+
+                foodzone.slotList[x, y].settingData(Random.Range(0, foodtypeNum));
+            }
+        }
+    }
+
 }
