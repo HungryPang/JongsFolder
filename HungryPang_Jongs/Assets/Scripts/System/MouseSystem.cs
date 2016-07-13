@@ -28,12 +28,12 @@ public class MouseSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            mMouseWorldPos = mCamera.ScreenToWorldPoint(Input.GetTouch(0).position);
-            transform.position = mMouseWorldPos + OffsetDrawPos;
-        }
-        else
+        //if (Input.GetTouch(0).phase == TouchPhase.Began)
+        //{
+        //    mMouseWorldPos = mCamera.ScreenToWorldPoint(Input.GetTouch(0).position);
+        //    transform.position = mMouseWorldPos + OffsetDrawPos;
+        //}
+        //else
         {
             mMouseWorldPos = mCamera.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mMouseWorldPos + OffsetDrawPos;

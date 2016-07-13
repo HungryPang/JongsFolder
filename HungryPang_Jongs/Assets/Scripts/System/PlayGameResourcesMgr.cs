@@ -14,6 +14,7 @@ public class PlayGameResourcesMgr : MonoBehaviour {
     void Start () {
         mFoodSprites = Resources.LoadAll<Sprite>(foodSpritesName.ToString()) as Sprite[];
     }
+
 	
 	// Update is called once per frame
 	void Update () {

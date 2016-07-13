@@ -68,6 +68,39 @@ namespace FoodSystem
     }
 }
 
+namespace AnimalSystem
+{
+    public enum AnimalTypes
+    {
+        eAnimalMouse = 0,
+        eAnimalCow,
+        eAnimalTiger,
+        eAnimalDragon,
+        eAnimalSnake,
+        eAnimalHorse,
+        eAnimalSheep,
+        eAnimalMonkey,
+        eAnimalChicken,
+        eAnimalWolf,
+        eAnimalTypesNum
+    }
+
+    public enum EatType
+    {
+        eEatNone = 0,
+        eEatLike,
+        eEatNormal,
+        eEatHate,
+        eEatTypeNum
+    }
+
+    class Animal
+    {
+        public FoodSystem.FoodTypes[] canEatFood = new FoodSystem.FoodTypes[3];
+        public EatType FriendAnimal = EatType.eEatNone;
+    }
+}
+
 public class GameSystem : MonoBehaviour {
     public MouseSystem mouse = null;
     public PlayGameResourcesMgr resourceMgr = null;
