@@ -40,10 +40,16 @@ public class MouseSystem : MonoBehaviour
         }
 
         if (Input.GetMouseButtonDown(0))
+        {
             processClick = false;
+            Vector3 pos = transform.position;
+            pos += new Vector3(0.1f, 0.1f, 0.0f);
+            transform.position = pos;
+        }
         else if (Input.GetMouseButtonUp(0))
+        {
             processClick = true;
-
+        }
         //if (processClick) return;
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
         if (false == processClick && Input.GetMouseButton(0))
@@ -57,6 +63,5 @@ public class MouseSystem : MonoBehaviour
             //collider.offset = offOffset;
         }
         collider.enabled = isClick;
-        print(processClick);
     }
 }

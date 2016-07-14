@@ -59,12 +59,27 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Object\AnimalSlot.cs" />
     <Compile Include="Assets\Scripts\Object\FoodSlot.cs" />
     <Compile Include="Assets\Scripts\Object\FoodZone.cs" />
+    <Compile Include="Assets\Scripts\Object\SpriteScript.cs" />
     <Compile Include="Assets\Scripts\System\CameraSystem.cs" />
     <Compile Include="Assets\Scripts\System\GameSystem.cs" />
+    <Compile Include="Assets\Scripts\System\HandleAnimalManager.cs" />
     <Compile Include="Assets\Scripts\System\MouseSystem.cs" />
     <Compile Include="Assets\Scripts\System\PlayGameResourcesMgr.cs" />
   </ItemGroup>

@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 26c5a165470179b4bb4704efc77eab52
+timeCreated: 1468484766
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: KakaoTalk_20160712_151642573_0
+    21300002: KakaoTalk_20160712_151642573_1
+    21300004: KakaoTalk_20160712_151642573_2
+    21300006: KakaoTalk_20160712_151642573_3
+    21300008: KakaoTalk_20160712_151642573_4
+    21300010: KakaoTalk_20160712_151642573_5
+    21300012: KakaoTalk_20160712_151642573_6
+    21300014: KakaoTalk_20160712_151642573_7
+    21300016: KakaoTalk_20160712_151642573_8
+    21300018: KakaoTalk_20160712_151642573_9
+    21300020: KakaoTalk_20160712_151642573_10
+    21300022: KakaoTalk_20160712_151642573_11
+    21300024: 12animal_0
+    21300026: 12animal_1
+    21300028: 12animal_2
+    21300030: 12animal_3
+    21300032: 12animal_4
+    21300034: 12animal_5
+    21300036: 12animal_6
+    21300038: 12animal_7
+    21300040: 12animal_8
+    21300042: 12animal_9
+    21300044: 12animal_10
+    21300046: 12animal_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 12animal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 81.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 81.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 81.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 81.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 81.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_8
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    - name: 12animal_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0.5
+        width: 75
+        height: 81.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 41.5}
+        - {x: -37.5, y: -40.5}
+        - {x: 37.5, y: -40.5}
+        - {x: 37.5, y: 41.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
