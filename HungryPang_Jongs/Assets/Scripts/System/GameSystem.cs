@@ -282,6 +282,7 @@ public class GameSystem : MonoBehaviour {
     public float scores = 0.0f;
     UnityEngine.UI.Text scoreText = null;
 
+    MenuSystem menu = null;
     FoodZone foodzone = null;
     int foodtypeNum = 0;
 
@@ -306,6 +307,11 @@ public class GameSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //if (gameOver)
+        //{
+        //    if(Input.GetMouseButtonDown(0))
+        //        menu.CheckMenuClick(mouse);
+        //}
         if (pigTime)
         {
             if (0.0f == pigTimeGage.rateOfGage)
@@ -331,7 +337,6 @@ public class GameSystem : MonoBehaviour {
             while (true)
             {
                 //index = Random.Range(0, (int)AnimalSystem.AnimalTypes.eAnimalTypesNum - 1);
-
                 if (index == animalNumHash[0]) continue;
                 if (index == animalNumHash[1]) continue;
                 if (index == animalNumHash[2]) continue;
@@ -430,6 +435,8 @@ public class GameSystem : MonoBehaviour {
     {
         gameOver = true;
         scoreText.text = "GameOver!";
-        Time.timeScale = 0.0f;
+
+        menu = FindObjectOfType(typeof(MenuSystem)) as MenuSystem;
+        menu.OnMenu();
     }
 }
