@@ -330,6 +330,7 @@ public class GameSystem : MonoBehaviour {
                     foodZoneCanTypeArray[foodIndex++] = types;
             }
 
+            if (null == ani) print("Null");
             animal.SetAnimal(ani, resourceMgr.animalSpriteArray[index]);
         }
 
@@ -356,9 +357,9 @@ public class GameSystem : MonoBehaviour {
             for (int y = 0; y < foodzone.zoneHeight; ++y)
             {
                 int index = (int)foodZoneCanTypeArray[Random.Range(0, foodtypeNum - 1)];
+                foodzone.slotList[x, y].gameMgr = this;
                 foodzone.slotList[x, y].settingData(resourceMgr.foodSpriteArray[index], 
                     FoodSystem.FoodManager.getInstance().HashFoodData(index));
-                foodzone.slotList[x, y].gameMgr = this;
             }
         }
     }

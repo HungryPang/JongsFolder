@@ -19,9 +19,14 @@ public class PlayGameResourcesMgr : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Awake () {
         mFoodSprites   = Resources.LoadAll<Sprite>(foodSpritesName.ToString()) as Sprite[];
         mAnimalSprites = Resources.LoadAll<Sprite>(animalSpritesName.ToString()) as Sprite[];
+    }
+
+    void Start()
+    {
+
     }
 
 	// Update is called once per frame
