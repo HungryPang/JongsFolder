@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: baf5c011c14d74a45b7e833bd03655de
+timeCreated: 1468495471
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: animalResources_0
+    21300002: animalResources_1
+    21300004: animalResources_2
+    21300006: animalResources_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 120
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: animalResources_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 20
+        width: 226
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.856, y: 51.74}
+        - {x: -57.856, y: -14.259998}
+        - {x: -44.856, y: -51.26}
+        - {x: 43.144, y: -51.26}
+        - {x: 56.144, y: -48.26}
+        - {x: 58.144, y: -20.259998}
+        - {x: 58.144, y: 43.74}
+        - {x: 50.144, y: 51.74}
+    - name: animalResources_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 10
+        width: 186
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.675995, y: 56.62}
+        - {x: -47.675995, y: 54.62}
+        - {x: -47.675995, y: -49.38}
+        - {x: -27.675995, y: -56.38}
+        - {x: 31.324005, y: -56.38}
+        - {x: 49.324005, y: -36.38}
+        - {x: 49.324005, y: 56.62}
+    - name: animalResources_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 16
+        width: 251
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56.5, y: -34.308}
+        - {x: 43.5, y: 26.692001}
+        - {x: 33.5, y: 53.692}
+        - {x: -33.5, y: 53.692}
+        - {x: -46.5, y: 27.692001}
+        - {x: -64.5, y: -25.307999}
+        - {x: -64.5, y: -53.308}
+        - {x: 64.5, y: -53.308}
+        - {x: 64.5, y: -26.307999}
+        - {x: 60.5, y: -27.307999}
+    - name: animalResources_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 34
+        width: 216
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.211975, y: 44.408}
+        - {x: -55.211975, y: 34.408}
+        - {x: -55.211975, y: -41.592}
+        - {x: -41.211975, y: -43.592}
+        - {x: 55.788025, y: -43.592}
+        - {x: 55.788025, y: 41.408}
+        - {x: 53.788025, y: 44.408}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

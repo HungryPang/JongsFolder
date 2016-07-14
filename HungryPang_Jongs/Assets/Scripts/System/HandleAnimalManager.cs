@@ -9,6 +9,7 @@ public class HandleAnimalManager : MonoBehaviour {
 
     SpriteScript[] FoodArray = new SpriteScript[3];
     AnimalSystem.Animal handledAnimal = null;
+    public AnimalSlot handleAnimalSlot = null;
 
     // Use this for initialization
     void Start () {
@@ -22,16 +23,17 @@ public class HandleAnimalManager : MonoBehaviour {
 	
 	}
 
-    public void Handle(AnimalSystem.Animal animal, PlayGameResourcesMgr resourceMgr)
+    public void Handle(AnimalSlot slot, PlayGameResourcesMgr resourceMgr)
     {
-        handledAnimal = animal;
-        handledAnimalSprite.SetSprite(resourceMgr.animalSpriteArray[(int)animal.animalType]);
+        handleAnimalSlot = slot;
+        handledAnimal    = slot.myAnimal;
+        handledAnimalSprite.SetSprite(resourceMgr.animalSpriteArray[(int)handledAnimal.animalType]);
 
         int index = 0;
         foreach(SpriteScript spriteTarget in FoodArray)
         {
-            if (FoodSystem.FoodTypes.eFoodNone != animal.canEatFood[index])
-                spriteTarget.SetSprite(resourceMgr.foodSpriteArray[(int)animal.canEatFood[index]]);
+            if (FoodSystem.FoodTypes.eFoodNone != handledAnimal.canEatFood[index])
+                spriteTarget.SetSprite(resourceMgr.foodSpriteArray[(int)handledAnimal.canEatFood[index]]);
             else
                 spriteTarget.SetSprite(null);
 

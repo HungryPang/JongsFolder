@@ -7,20 +7,21 @@ namespace FoodSystem
     public enum FoodTypes
     {
         eFoodNone = -1,
-        eFoodCheese = 0,
+        eFoodHay, // 건초
+        eFoodGrass, // 풀
+        eFoodLarva, // 애벌래
+        eFoodFire,
+        eFoodCow,
+        eFoodCheese,
+        eFoodLeaf,
+        eFoodChicken,
         eFoodAmond,
         eFoodApple,
         eFoodCorn,
         eFoodRice,
         eFoodMouse,
-        eFoodLeaf,
-        eFoodGrass, // 풀
         eFoodAcorn, // 도토리
-        eFoodHay, // 건초
         eFoodFeed,
-        eFoodCow,
-        eFoodChicken,
-        eFoodFire,
         eFoodEgg,
         eFoodCarrot,
         eFoodHorse,
@@ -30,7 +31,6 @@ namespace FoodSystem
         eFoodBanana,
         eFoodBread,
         eFoodCookedRice, // 밥
-        eFoodLarva, // 애벌래
         eFoodBarley,
         eFoodTypesNum
     }
@@ -93,8 +93,8 @@ namespace AnimalSystem
         eAnimalNone = -1,
         eAnimalMouse,
         eAnimalCow,
-        eAnimalTiger,
         eAnimalDragon,
+        eAnimalTiger,
         eAnimalSnake,
         eAnimalHorse,
         eAnimalSheep,
@@ -177,8 +177,10 @@ namespace AnimalSystem
             animalList[(int)AnimalTypes.eAnimalMouse] = new Animal(
                     AnimalTypes.eAnimalMouse,
                     FoodSystem.FoodTypes.eFoodCheese,
-                    FoodSystem.FoodTypes.eFoodRice,
-                    FoodSystem.FoodTypes.eFoodMouse,
+                    //FoodSystem.FoodTypes.eFoodRice,
+                    FoodSystem.FoodTypes.eFoodHay,
+                    FoodSystem.FoodTypes.eFoodChicken,
+                    //FoodSystem.FoodTypes.eFoodMouse,
                     AnimalTypes.eAnimalCow
                 );
             // 소
@@ -186,6 +188,7 @@ namespace AnimalSystem
                 AnimalTypes.eAnimalCow,
                 FoodSystem.FoodTypes.eFoodGrass,
                 FoodSystem.FoodTypes.eFoodHay,
+                //FoodSystem.FoodTypes.eFoodChicken,
                 FoodSystem.FoodTypes.eFoodCow,
                 AnimalTypes.eAnimalHorse
             );
@@ -272,7 +275,12 @@ public class GameSystem : MonoBehaviour {
 
     public AnimalSlot[] animalSlotList = new AnimalSlot[4];
 
+    public bool gameOver = false;
     public bool pigTime = false;
+    public Gage pigTimeGage = null;
+
+    public float scores = 0.0f;
+    UnityEngine.UI.Text scoreText = null;
 
     FoodZone foodzone = null;
     int foodtypeNum = 0;
@@ -287,7 +295,9 @@ public class GameSystem : MonoBehaviour {
 
     void Start () {
         handleMgr = FindObjectOfType(typeof(HandleAnimalManager)) as HandleAnimalManager;
-
+        pigTimeGage = GetComponentInChildren<Gage>();
+        // 나중에 그림으로 처리하자. 텍스트 여러개 해놓으면 또 찾기 불편 + 성능
+        scoreText = FindObjectOfType<UnityEngine.UI.Text>();
         _InitAnimals();
 
         _InitFoodSystem();
@@ -296,7 +306,14 @@ public class GameSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (pigTime)
+        {
+            if (0.0f == pigTimeGage.rateOfGage)
+            {
+                pigTimeGage.MinGage();
+                pigTime = false;
+            }
+        }
     }
     void _InitAnimals()
     {
@@ -308,12 +325,12 @@ public class GameSystem : MonoBehaviour {
         foodtypeNum = 12;
 
         AnimalSystem.Animal[] animalist = AnimalSystem.AnimalManager.getInstance().animalData;
+        int index = 0;
         foreach (AnimalSlot animal in animalSlotList)
         {
-            int index = 0;
             while (true)
             {
-                index = Random.Range(0, (int)AnimalSystem.AnimalTypes.eAnimalTypesNum - 1);
+                //index = Random.Range(0, (int)AnimalSystem.AnimalTypes.eAnimalTypesNum - 1);
 
                 if (index == animalNumHash[0]) continue;
                 if (index == animalNumHash[1]) continue;
@@ -330,8 +347,8 @@ public class GameSystem : MonoBehaviour {
                     foodZoneCanTypeArray[foodIndex++] = types;
             }
 
-            if (null == ani) print("Null");
             animal.SetAnimal(ani, resourceMgr.animalSpriteArray[index]);
+            index++;
         }
 
         foodtypeNum = foodIndex + 1;
@@ -386,4 +403,33 @@ public class GameSystem : MonoBehaviour {
             FoodSystem.FoodManager.getInstance().HashFoodData(index));
     }
 
+    public void PigTime()
+    {
+        if (pigTimeGage.rateOfGage >= 1.0f)
+        {
+            pigTimeGage.MaxGage();
+            pigTime = true;
+        }
+    }
+
+
+    public void PlayerEatFood(FoodSystem.FoodData data)
+    {
+        // 점수획득 여기다 넣어야함
+        scores += data.score;
+        scoreText.text = "Score : " + scores;
+
+        handleMgr.handleAnimalSlot.DecreaseHungryValue(10.0f);
+
+        if (pigTime) return;
+        pigTimeGage.GageFluctuation(10);//data.score);
+        PigTime();
+    }
+
+    public void GameOver()
+    {
+        gameOver = true;
+        scoreText.text = "GameOver!";
+        Time.timeScale = 0.0f;
+    }
 }

@@ -76,7 +76,9 @@
     <Compile Include="Assets\Scripts\Object\AnimalSlot.cs" />
     <Compile Include="Assets\Scripts\Object\FoodSlot.cs" />
     <Compile Include="Assets\Scripts\Object\FoodZone.cs" />
+    <Compile Include="Assets\Scripts\Object\Gage.cs" />
     <Compile Include="Assets\Scripts\Object\SpriteScript.cs" />
+    <Compile Include="Assets\Scripts\Object\hpGage.cs" />
     <Compile Include="Assets\Scripts\System\CameraSystem.cs" />
     <Compile Include="Assets\Scripts\System\GameSystem.cs" />
     <Compile Include="Assets\Scripts\System\HandleAnimalManager.cs" />

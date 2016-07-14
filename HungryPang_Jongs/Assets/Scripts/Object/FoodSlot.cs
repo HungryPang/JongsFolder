@@ -43,6 +43,7 @@ public class FoodSlot : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        if (gameMgr.gameOver) return;
         if (bombing) return;
         if (false == gameMgr.mouse.isClick) return;
         if (collider.name == "Mouse")
@@ -59,6 +60,7 @@ public class FoodSlot : MonoBehaviour {
     {
         bombing = true;
         GetComponent<SpriteRenderer>().sortingOrder = 1;
+        gameMgr.PlayerEatFood(fooddata);
     }
 
     void _BombEnd()
