@@ -4,10 +4,15 @@ using System.Collections;
 public class FoodSlot : MonoBehaviour {
     public GameSystem gameMgr = null;
 
+    Sprite[] m_ArrEffectDust = null;
     bool bombing = false;
     float bombTime = 0.0f;
+
+    bool bEffectStart = false;
+    float fEffectTime = 0.0f;
     Vector3 initScale;
-    public float bombAnimTime = 0.5f;
+    float bombAnimTime = 0.15f;
+    float effectAnimTime = 0.35f;
 
     FoodSystem.FoodData myFoodData;
     public FoodSystem.FoodData fooddata
@@ -20,6 +25,8 @@ public class FoodSlot : MonoBehaviour {
     void Start () {
         initScale = transform.localScale;
         GetComponent<SpriteRenderer>().sortingOrder = 0;
+        gameMgr = GetComponentInParent<GameSystem>();
+        m_ArrEffectDust = gameMgr.resourceMgr.eDustSpriteArray;
     }
 	
 	// Update is called once per frame
@@ -31,7 +38,24 @@ public class FoodSlot : MonoBehaviour {
             transform.localScale = new Vector3(initScale.x + scaleValue, initScale.y + scaleValue, 1.0f);
 
             if (bombAnimTime < bombTime)
+            {
+                _EffectTime();
+                // _BombEnd();
+            }
+        }
+        else if(bEffectStart)
+        {
+            fEffectTime += Time.deltaTime;
+            float fFrameSpeed = m_ArrEffectDust.Length;
+            int nFrame = (int)((fEffectTime * fFrameSpeed) / effectAnimTime);
+
+            if (nFrame >= m_ArrEffectDust.Length)
+            {
                 _BombEnd();
+            }
+            else
+                GetComponent<SpriteRenderer>().sprite = m_ArrEffectDust[nFrame];
+
         }
 	}
 
@@ -63,12 +87,18 @@ public class FoodSlot : MonoBehaviour {
         gameMgr.PlayerEatFood(fooddata);
     }
 
+    void _EffectTime()
+    {
+        bEffectStart = true;
+        bombing = false;
+        bombTime = 0.0f;
+        transform.localScale = initScale;
+    }
     void _BombEnd()
     {
-        bombTime = 0.0f;
-        bombing = false;
+        fEffectTime = 0.0f;
+        bEffectStart = false;
         GetComponent<SpriteRenderer>().sortingOrder = 0;
-        transform.localScale = initScale;
 
         gameMgr.changeFoodSlot(this);
     }

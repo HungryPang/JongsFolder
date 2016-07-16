@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Object\Gage.cs" />
     <Compile Include="Assets\Scripts\Object\SpriteScript.cs" />
     <Compile Include="Assets\Scripts\Object\hpGage.cs" />
+    <Compile Include="Assets\Scripts\Object\pigImage.cs" />
     <Compile Include="Assets\Scripts\System\CameraSystem.cs" />
     <Compile Include="Assets\Scripts\System\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\System\Continue.cs" />

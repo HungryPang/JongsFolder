@@ -1,0 +1,13 @@
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_obj\Debug\HungryPang_Jongs.CSharp.csprojResolveAssemblyReference.cache
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+D:\Study\Git\whdtm\JongsFolder\HungryPang_Jongs\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb

@@ -320,6 +320,12 @@ public class GameSystem : MonoBehaviour {
                 pigTime = false;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            pigTimeGage.GageFluctuation(100);//data.score);
+            PigTime();
+        }
     }
     void _InitAnimals()
     {

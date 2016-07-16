@@ -40,13 +40,13 @@ public class Gage : MonoBehaviour {
 
     public void MaxGage()
     {
-        GetComponent<SpriteRenderer>().color = Color.cyan;
+        //GetComponent<SpriteRenderer>().color = Color.cyan;
         isMax = true;
     }
 
     public void MinGage()
     {
-        GetComponent<SpriteRenderer>().color = Color.white;
+        //GetComponent<SpriteRenderer>().color = Color.white;
         isMax = false;
     }
 }
