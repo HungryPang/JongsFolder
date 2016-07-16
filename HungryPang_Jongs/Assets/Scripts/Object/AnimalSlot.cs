@@ -16,7 +16,7 @@ public class AnimalSlot : MonoBehaviour {
 	void Start () {
         hpSystem = GetComponentInChildren<hpGage>();
         handleMgr = GetComponentInParent<HandleAnimalManager>();
-        gameMgr = FindObjectOfType(typeof(GameSystem)) as GameSystem;
+        gameMgr = FindObjectOfType(typeof(GameSystem)) as GameSystem;   
     }
 	
 	// Update is called once per frame

@@ -177,8 +177,8 @@ namespace AnimalSystem
             animalList[(int)AnimalTypes.eAnimalMouse] = new Animal(
                     AnimalTypes.eAnimalMouse,
                     FoodSystem.FoodTypes.eFoodCheese,
-                    //FoodSystem.FoodTypes.eFoodRice,
                     FoodSystem.FoodTypes.eFoodHay,
+                    //FoodSystem.FoodTypes.eFoodRice,
                     FoodSystem.FoodTypes.eFoodChicken,
                     //FoodSystem.FoodTypes.eFoodMouse,
                     AnimalTypes.eAnimalCow
@@ -353,6 +353,7 @@ public class GameSystem : MonoBehaviour {
             }
 
             animal.SetAnimal(ani, resourceMgr.animalSpriteArray[index]);
+            // 나중에 지워라
             index++;
         }
 

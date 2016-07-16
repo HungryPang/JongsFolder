@@ -2,11 +2,13 @@
 using System.Collections;
 
 public class exitMenu : MenuInterface {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
+    void Awake()
+    {
+        InterfaceStart();
+    }
+    // Use this for initialization
+    void Start () {
+    }
 	
 	// Update is called once per frame
 	void Update () {
