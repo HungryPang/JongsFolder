@@ -40,7 +40,6 @@ public class FoodSlot : MonoBehaviour {
             if (bombAnimTime < bombTime)
             {
                 _EffectTime();
-                // _BombEnd();
             }
         }
         else if(bEffectStart)

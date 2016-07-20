@@ -17,16 +17,17 @@ public class Gage : MonoBehaviour {
         value = 0;
 
         nowScale = initScale = transform.localScale;
-        //transform.rotation = Quaternion.identity;
+        transform.localScale = new Vector3(0.0f, initScale.y, initScale.z);
     }
 	
 	// Update is called once per frame
 	void Update () {
         GageFluctuation(Time.deltaTime * increaseGagePerSecond);
 
-        float t = rateOfGage;
-        nowScale.x = t * initScale.x;
-        transform.localScale = nowScale;
+        float fPercent = rateOfGage;
+        nowScale.x = fPercent * initScale.x;
+        // transform.localScale = nowScale;
+        iTween.ScaleTo(this.gameObject, iTween.Hash("x", nowScale.x, "time", 1.0f, "easetype", iTween.EaseType.easeOutElastic));
     }
 
     public void GageFluctuation(float delta)

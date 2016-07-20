@@ -19,7 +19,7 @@ public class hpGage : Gage {
         GageFluctuation(Time.deltaTime * increaseGagePerSecond);
 
         float t = rateOfGage;
-        nowScale.y = t * initScale.y;
+        nowScale.x = t * initScale.x;
         transform.localScale = nowScale;
     }
 }

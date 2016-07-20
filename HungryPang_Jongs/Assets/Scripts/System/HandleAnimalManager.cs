@@ -11,11 +11,15 @@ public class HandleAnimalManager : MonoBehaviour {
     AnimalSystem.Animal handledAnimal = null;
     public AnimalSlot handleAnimalSlot = null;
 
+    public csLifeGage LifeGage = null;
+
     // Use this for initialization
     void Start () {
         FoodArray[0] = handledLikeFood;
         FoodArray[1] = handledNormalFood;
         FoodArray[2] = handledHateFood;
+
+        //LifeGage = GetComponent<csLifeGage>();
     }
 	
 	// Update is called once per frame
@@ -25,6 +29,7 @@ public class HandleAnimalManager : MonoBehaviour {
 
     public void Handle(AnimalSlot slot, PlayGameResourcesMgr resourceMgr)
     {
+
         handleAnimalSlot = slot;
         handledAnimal    = slot.myAnimal;
         handledAnimalSprite.SetSprite(resourceMgr.animalSpriteArray[(int)handledAnimal.animalType]);
@@ -33,7 +38,11 @@ public class HandleAnimalManager : MonoBehaviour {
         foreach(SpriteScript spriteTarget in FoodArray)
         {
             if (FoodSystem.FoodTypes.eFoodNone != handledAnimal.canEatFood[index])
+            {
+                print(LifeGage);
+
                 spriteTarget.SetSprite(resourceMgr.foodSpriteArray[(int)handledAnimal.canEatFood[index]]);
+            }
             else
                 spriteTarget.SetSprite(null);
 

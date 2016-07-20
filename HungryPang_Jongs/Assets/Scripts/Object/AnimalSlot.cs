@@ -21,10 +21,10 @@ public class AnimalSlot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (hpSystem.isGameOver)
-        {
-            gameMgr.GameOver();
-        }
+        //if (hpSystem.isGameOver)
+        //{
+        //    gameMgr.GameOver();
+        //}
     }
 
     public void SetAnimal(Animal animal, Sprite sprite)
