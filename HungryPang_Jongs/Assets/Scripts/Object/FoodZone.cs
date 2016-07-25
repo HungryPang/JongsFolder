@@ -3,8 +3,8 @@ using System.Collections;
 
 public class FoodZone : MonoBehaviour {
     public FoodSlot slot;
-    public int zoneWidth  = 6;
-    public int zoneHeight = 6;
+    public int zoneWidth  = 8;
+    public int zoneHeight = 8;
     public Vector2 startOffeset;
 
     public FoodSlot[,] slotList = null;

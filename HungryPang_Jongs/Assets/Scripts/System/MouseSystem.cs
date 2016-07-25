@@ -16,13 +16,13 @@ public class MouseSystem : MonoBehaviour
     }
 
 
-    Vector2 offOffset;
+    //Vector2 offOffset;
     // Use this for initialization
     void Start()
     {
         mCamera = GetComponentInParent<Camera>();
         Cursor.visible = false;
-        offOffset = new Vector2(-1000, -1000);
+        //offOffset = new Vector2(-1000, -1000);
     }
 
     // Update is called once per frame

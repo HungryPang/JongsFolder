@@ -135,22 +135,27 @@ namespace AnimalSystem
             canEatFood[(int)EatType.eEatHate]   = hate;
 
             friendAnimal = friend;
+        }
+        public void InitGage()
+        {
             LifeGage = MonoBehaviour.FindObjectOfType<csLifeGage>();
+            //MonoBehaviour.print("다시들어옴");
         }
 
         public bool CanEat(FoodSystem.FoodTypes type)
         {
+            int iNum = 0;
             foreach (FoodSystem.FoodTypes myType in canEatFood)
             {
                 if (myType == type)
                 {
                     //MonoBehaviour.print(type);
                     //-------------------------------시간 부활시키기//
+                    LifeGage.fLifePoint += 1.0f;
 
-                    LifeGage.fLifePoint += 3.0f;
-                    //MonoBehaviour.print(myType + " vs " + type);
                     return true;
                 }
+                ++iNum;
             }
             //MonoBehaviour.print(type + "은 실패!");
             return false;
@@ -175,6 +180,13 @@ namespace AnimalSystem
                 pointer.setting();
             }
             return pointer;
+        }
+        public void LinkGage()
+        {
+            foreach (Animal ani in animalList)
+            {
+                ani.InitGage();
+            }
         }
 
         public void setting()
@@ -293,9 +305,9 @@ public class GameSystem : MonoBehaviour {
     FoodZone foodzone = null;
     int foodtypeNum = 0;
 
-    // Play Time
-    public float mfPlayTime = 0.0f;
-    float fMaxTime;
+    //// Play Time
+    //public float mfPlayTime = 0.0f;
+    public float fNoEatFoodTime = 0.0f;
 
     // Use this for initialization
     LinkedList<FoodSystem.FoodTypes> foodlist = new LinkedList<FoodSystem.FoodTypes>();
@@ -303,7 +315,7 @@ public class GameSystem : MonoBehaviour {
 
     void Awake()
     {
-        fMaxTime = mfPlayTime;
+        //fMaxTime = mfPlayTime;
         //print(fMaxTime);
     }
 
@@ -320,26 +332,26 @@ public class GameSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //if (gameOver)
-        //{
-        //    if(Input.GetMouseButtonDown(0))
-        //        menu.CheckMenuClick(mouse);
-        //}
+
         if (pigTime)
         {
+            //print("피그타임");
+            // 1초에 30 줄어듬 -------------------------
+            pigTimeGage.GageFluctuation( -30 * Time.deltaTime);
             if (0.0f == pigTimeGage.rateOfGage)
             {
                 pigTimeGage.MinGage();
                 pigTime = false;
             }
-          
         }
-        mfPlayTime -= Time.deltaTime;
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        else
         {
-            pigTimeGage.GageFluctuation(100);//data.score);
-            PigTime();
+            // 3초동안 먹지 않으면 1초에 -1씩 감소
+            if(fNoEatFoodTime > 3.0f)
+            {
+                pigTimeGage.GageFluctuation(-1 * Time.deltaTime);
+            }
+            fNoEatFoodTime += Time.deltaTime;
         }
     }
     void _InitAnimals()
@@ -357,20 +369,11 @@ public class GameSystem : MonoBehaviour {
         animalNumHash[3] = 3;
 
         AnimalSystem.Animal[] animalist = AnimalSystem.AnimalManager.getInstance().animalData;
+        AnimalSystem.AnimalManager.getInstance().LinkGage();
         //int index = 0;
+
         foreach (AnimalSlot animal in animalSlotList)
         {
-            //while (true)
-            //{
-            //    //index = Random.Range(0, (int)AnimalSystem.AnimalTypes.eAnimalTypesNum - 1);
-            //    if (index == animalNumHash[0]) continue;
-            //    if (index == animalNumHash[1]) continue;
-            //    if (index == animalNumHash[2]) continue;
-
-            //    break;
-            //}
-            //animalNumHash[animalHashIndex++] = index;
-
             AnimalSystem.Animal ani = animalist[animalNumHash[animalHashIndex]];
             foreach (FoodSystem.FoodTypes types in ani.canEatFood)
             {
@@ -382,6 +385,10 @@ public class GameSystem : MonoBehaviour {
             // 나중에 지워라
             //index++;
         }
+
+        //맨왼쪽 동물 핸들에 등록
+        //print(animalSlotList[0]);
+        handleMgr.InitHandleAnimal(animalSlotList[0]);
 
         foodtypeNum = foodIndex + 1;
     }
@@ -451,11 +458,13 @@ public class GameSystem : MonoBehaviour {
         scores += data.score;
         scoreText.text = "Score : " + scores;
 
+        //----------------헝그리 수치----------------
+   
         handleMgr.handleAnimalSlot.DecreaseHungryValue(10.0f);
 
         if (pigTime) return;
-
-        pigTimeGage.GageFluctuation(10);//data.score);
+        // ------------------------피그 점수 ---------------------------------
+        pigTimeGage.GageFluctuation(1);//data.score);
         PigTime();
     }
 

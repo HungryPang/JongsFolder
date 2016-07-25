@@ -75,8 +75,13 @@ public class FoodSlot : MonoBehaviour {
 
     void _ButtonDown()
     {
-        if (gameMgr.pigTime || gameMgr.handleMgr.canEatFood(myFoodData.type))
+        // --- 먹는거 ---
+        if (gameMgr.handleMgr.canEatFood(myFoodData.type) || gameMgr.pigTime)
+        {
+            // 먹으면 시간 초기화
+            gameMgr.fNoEatFoodTime = 0.0f;
             _BombStart();
+        }
     }
 
     void _BombStart()

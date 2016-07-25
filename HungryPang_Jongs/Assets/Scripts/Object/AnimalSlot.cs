@@ -43,5 +43,6 @@ public class AnimalSlot : MonoBehaviour {
     void _ButtonDown()
     {
         handleMgr.Handle(this, gameMgr.resourceMgr);
+        //print("클릭");
     }
 }

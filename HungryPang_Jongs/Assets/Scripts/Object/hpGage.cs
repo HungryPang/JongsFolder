@@ -16,6 +16,7 @@ public class hpGage : Gage {
 	
 	// Update is called once per frame
 	void Update () {
+        //배고픔지수
         GageFluctuation(Time.deltaTime * increaseGagePerSecond);
 
         float t = rateOfGage;

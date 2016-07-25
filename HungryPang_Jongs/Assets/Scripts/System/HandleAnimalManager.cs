@@ -12,6 +12,7 @@ public class HandleAnimalManager : MonoBehaviour {
     public AnimalSlot handleAnimalSlot = null;
 
     public csLifeGage LifeGage = null;
+    GameSystem gameMgr = null;
 
     // Use this for initialization
     void Start () {
@@ -20,6 +21,9 @@ public class HandleAnimalManager : MonoBehaviour {
         FoodArray[2] = handledHateFood;
 
         //LifeGage = GetComponent<csLifeGage>();
+        
+
+        //Handle(handleAnimalSlot, gameMgr.resourceMgr);
     }
 	
 	// Update is called once per frame
@@ -39,7 +43,7 @@ public class HandleAnimalManager : MonoBehaviour {
         {
             if (FoodSystem.FoodTypes.eFoodNone != handledAnimal.canEatFood[index])
             {
-                print(LifeGage);
+                //print(LifeGage);
 
                 spriteTarget.SetSprite(resourceMgr.foodSpriteArray[(int)handledAnimal.canEatFood[index]]);
             }
@@ -53,6 +57,19 @@ public class HandleAnimalManager : MonoBehaviour {
     public bool canEatFood(FoodSystem.FoodTypes type)
     {
         if (null == handledAnimal) return false;
+        //print("클릭!!");
         return handledAnimal.CanEat(type);
+    }
+
+    public void InitHandleAnimal(AnimalSlot slot)
+    {
+        //
+        gameMgr = FindObjectOfType(typeof(GameSystem)) as GameSystem;
+        FoodArray[0] = handledLikeFood;
+        FoodArray[1] = handledNormalFood;
+        FoodArray[2] = handledHateFood;
+
+        //print(gameMgr);
+        Handle(slot, gameMgr.resourceMgr);
     }
 }
